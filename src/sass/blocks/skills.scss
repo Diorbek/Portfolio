@@ -1,0 +1,100 @@
+.skills {
+    padding-top: 120px;
+    &__title {
+        text-align: center;
+        width: 100px;
+        margin: 0 auto;
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            left: 32%;
+        }
+        &:hover {
+            &:before {
+                left: 32%;
+            }
+        }
+    }
+    &__subtitle {
+        text-align: center;
+        margin-top: 6px;
+    }
+    &__wrapper {
+        padding: 60px 10px 0px 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        grid-auto-rows: 270px;
+        gap: 13px;
+    }
+    &__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 30px 30px 25px 30px;
+        border: 1px solid #000;
+        transition: 0.3s all;
+        border-radius: 4px;
+        &:hover {
+            transform: scale(1.1);
+        }
+        &-head {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        &-descr {
+            font-size: 12px;
+            margin-top: 15px;
+        }
+    }
+    &__ratings {
+        margin-top: 120px;
+        min-height: 170px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2,1fr);
+        row-gap: 30px;
+        column-gap: 45px;
+        &-wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        &-title {
+            padding-left: 14px ;
+            position: relative;
+            @include before_circle;
+            &:before {
+                top: -40%;
+                left:0;
+            }
+            &:hover {
+                &:before {
+                    top: -40%;
+                    left:0;
+                }
+            }
+        }
+        &-line {
+            position: relative;
+            width: 350px;
+            height: 14px;
+            background-color: #E8E4DE;
+            margin-top: 27px;
+            position: relative;
+            z-index: -1;
+            border-radius: 5px;
+            span {
+                background-color: $main-color;
+                position: absolute;
+                top:0;
+                left:0;
+                z-index: 2;
+                height: 100%;
+                border-radius: 5px;
+            }    
+        }
+    }
+}
+
