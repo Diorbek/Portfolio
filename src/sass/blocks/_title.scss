@@ -21,4 +21,28 @@
     &_fz48 {
         font-size: 48px;
     }
+    &__section-title {
+            text-align: center;
+            width: 100px;
+            margin: 0 auto;
+            position: relative;
+            text-align: center;
+            @include before_circle;
+            &:before {
+                left: 32%;
+            }
+            &:hover {
+                &:before {
+                    left: 32%;
+                }
+            }
+        
+        &__subtitle {
+            text-align: center;
+            margin-top: 6px;
+        }
+    }
+    &__section-subtitle {
+        text-align: center;
+    }
 }

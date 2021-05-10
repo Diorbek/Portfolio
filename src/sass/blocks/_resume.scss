@@ -1,28 +1,6 @@
 .resume {
     padding-top: 120px ;
-    &__title {
-        margin: 0 auto;
-        width: 200px;
-        position: relative;
-        text-align: center;
-        @include before_circle;
-        &:before {
-            top: -3%;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        &:hover {
-            &:before {
-                top: 0;
-                left: 50%;
-                transform: translateX(-50%) scale(1.3);
-            }
-        }
-    }
-    &__subtitle {
-        text-align: center;
-        margin-top: 3px;
-    }
+
     &__wrapper {
         padding: 60px 65px 0 65px;
         display: grid;

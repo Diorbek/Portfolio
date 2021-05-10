@@ -1,25 +1,6 @@
 .skills {
     padding-top: 120px;
-    &__title {
-        text-align: center;
-        width: 100px;
-        margin: 0 auto;
-        position: relative;
-        text-align: center;
-        @include before_circle;
-        &:before {
-            left: 32%;
-        }
-        &:hover {
-            &:before {
-                left: 32%;
-            }
-        }
-    }
-    &__subtitle {
-        text-align: center;
-        margin-top: 6px;
-    }
+
     &__wrapper {
         padding: 60px 10px 0px 10px;
         display: grid;
@@ -61,21 +42,21 @@
             justify-content: space-between;
         }
         
-        &-title {
-            padding-left: 14px ;
-            position: relative;
-            @include before_circle;
-            &:before {
-                top: -40%;
-                left:0;
-            }
-            &:hover {
-                &:before {
-                    top: -40%;
-                    left:0;
-                }
-            }
-        }
+        // &-title {
+        //     padding-left: 14px ;
+        //     position: relative;
+        //     @include before_circle;
+        //     &:before {
+        //         top: -40%;
+        //         left:0;
+        //     }
+        //     &:hover {
+        //         &:before {
+        //             top: -40%;
+        //             left:0;
+        //         }
+        //     }
+        // }
         &-line {
             position: relative;
             width: 350px;
