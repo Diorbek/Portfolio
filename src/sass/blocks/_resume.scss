@@ -7,6 +7,7 @@
         grid-template-columns: repeat(2, 425px);
         column-gap: 135px;
         
+        
     }
     &__column {
         &-title {
@@ -36,7 +37,7 @@
                     position: absolute;
                     top: -16px;
                     left: 0;
-                    background-color: $resume-line-color;
+                    background-color: #fff;
                 }
             }
         }
@@ -48,7 +49,7 @@
             height: 1px;
             width: 45px;
             position: absolute;
-            background-color: #000;
+            background-color: #fff;
             top:61px;
         }
         &-head {
@@ -68,9 +69,9 @@
             position: absolute;
             top:50px;
             left: 45px;
+            z-index: 1;
             @include before_circle;
-            z-index: 11;
-            img {
+            svg {
                 position: relative;
                 left: 17px;
                 top: 14px;

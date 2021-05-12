@@ -2,6 +2,12 @@
     font-weight: bold;
     font-size: 36px;
     line-height: 60px;
+    z-index: 10;
+    z-index: 3;
+    letter-spacing: 2px;
+    color: #FFFFFF;
+    // background: #ece9e9;
+    //text-shadow: 3px 5px 2px #474747, 4px 6px 2px #474747, 4px 6px 4px #474747,5px 7px 6px #474747,7px 8px 6px #474747;
     // color: #fff;
     &_fz14 {
         font-size: 14px;
@@ -14,20 +20,24 @@
     &_fz20 {
         font-size: 20px;
         line-height: 30px;
+        
     }
     &_fz36 {
         font-size: 36px;
+        text-shadow: 3px 5px 2px #474747, 4px 6px 2px #474747, 4px 6px 4px #474747,5px 7px 6px #474747,7px 8px 6px #474747;
     }
     &_fz48 {
         font-size: 48px;
+        text-shadow: 3px 5px 2px #474747, 4px 6px 2px #474747, 4px 6px 4px #474747,5px 7px 6px #474747,7px 8px 6px #474747;
     }
     &__section-title {
             text-align: center;
             width: 100px;
             margin: 0 auto;
             position: relative;
-            text-align: center;
             @include before_circle;
+            text-shadow: 3px 5px 2px #474747, 4px 6px 2px #474747, 4px 6px 4px #474747,5px 7px 6px #474747,;
+            z-index: 2;
             &:before {
                 left: 32%;
             }
