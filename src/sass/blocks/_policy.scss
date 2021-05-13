@@ -1,0 +1,36 @@
+
+@keyframes alert {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: #fff;
+        color:red;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+
+.policy {
+    position: relative;
+    padding: 200px 0 100px 0;
+    color: black;
+    li {
+        margin-left: 25px;
+    }
+    &__warning {
+        color: #fff;
+        position: fixed;
+        font-size: 36px;
+        top: 0;
+        left: 0;
+        background-color: red;
+    }
+    &__alert {
+        color: #fff;
+        animation: alert 2s 1s infinite;
+    }
+}
+
